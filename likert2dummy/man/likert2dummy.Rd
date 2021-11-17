@@ -15,4 +15,5 @@ This function converts 5-pt Likert scales to dummy variables using the rule that
 \examples{
 likert2dummy(gapminder, lifeExp)
 
+
 }
