@@ -25,7 +25,7 @@ You can install the released version of likert2dummy from Github using:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("asanto0803/STAT545AssignmentB2/likert2dummy")
+devtools::install_github("asanto0803/STAT545AssignmentB2/")
 ```
 ## Example
 
