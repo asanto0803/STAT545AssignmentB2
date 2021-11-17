@@ -6,6 +6,11 @@
 \usage{
 likert2dummy(df, x)
 }
+\arguments{
+\item{df}{A data frame from which you will pull the vector you plan to modify. This parameter is called df to stand for "data frame".}
+
+\item{x}{A vector of Likert-scale responses (in numerical form, will not work for character data) that will be turned in to dummy variable. This parameter is called "x" in the function to represent that it can be any single column within the data frame.}
+}
 \value{
 A vector of numbers resulting from converting 5-pt scale to a dummy variable.
 }
@@ -13,7 +18,17 @@ A vector of numbers resulting from converting 5-pt scale to a dummy variable.
 This function converts 5-pt Likert scales to dummy variables using the rule that a 4 or 5 on a Likert scale will = 1 on the dummy scale, and a 3, 2, or 1 on Likert scale will = 0 on a dummy scale.
 }
 \examples{
-likert2dummy(gapminder, lifeExp)
 
+var1 <- c(1,3,5,4,2,3,1)
+var2 <- c(2,4,5,NA,2,1,1)
+df <- data.frame(var1, var2)
+likert2dummy(df, var1)
+likert2dummy(df, var2)
+
+x <-c(1,5,2,2,1)
+y <-c(1:5)
+df1 <- data.frame(x,y)
+df2 <- likert2dummy(df1, x)
+df3 <- likert2dummy(df2, y)
 
 }
