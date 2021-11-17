@@ -6,6 +6,7 @@
 #' @return A vector of numbers resulting from converting 5-pt scale to a dummy variable.
 #' @examples likert2dummy(gapminder, lifeExp)
 #'
+#'
 likert2dummy <- function(df, x) {
   test1 <- df %>%
     pull({{x}})
