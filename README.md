@@ -11,21 +11,21 @@ Anna Santo, PhD Student in the STat545 class.
  
 ## FILES
 - README.md : Overall description of project and project files
-- "likert2dummy"" folder:
-  + README.Rmd :
-  + README.md :
-  + DESCRIPTION :
-  + LICENSE :
-  + LICENSE.md :
-  + NAMESPACE :
-  + "R"" Folder :
-      - likert2dummy.R :
-  + "man"" Folder :
-      - likert2dummy.Rd :
-  + "tests"" Folder :
-      - testthat.R :
-      - "testthat" Folder :
-          + test-likert2dummy.R : 
+- "likert2dummy" folder
+  + README.Rmd : Overall description of project and project files, hand-generated
+  + README.md : Overall description of project and project files, auto-generated from the .Rmd file
+  + DESCRIPTION : Details about the likert2dummy function, including, for example, version, authors, a description, and additional documentation and licensing information.
+  + LICENSE : Year and copyright information for likert2dummy function
+  + LICENSE.md : Details about licensing permissions to use the likert2dummy function
+  + NAMESPACE : automatically generated file -- DO NOT EDIT
+  + "R"" Folder
+      - likert2dummy.R : code to create and document the likert2dummy function
+  + "man"" Folder
+      - likert2dummy.Rd : automatically generated file -- DO NOT EDIT
+  + "tests"" Folder
+      - testthat.R : file to execute tests to ensure likert2dummy is properly functioning
+      - "testthat" Folder
+          + test-likert2dummy.R : code for a series of tests that can be used to ensure likert2dummy is properly functioning
 
 
 ## How to run code in folder
