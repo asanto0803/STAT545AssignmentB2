@@ -1,13 +1,13 @@
 Package: likert2dummy
 Title: Convert 5-pt Likert scale variable to dummy variable
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Anna",
+           family = "Santo",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+           email = "anna.santo@ubc.ca",
+           comment = c(ORCID = "0000-0003-2056-0892"))
+Description: The goal of likert2dummy is to turn 5-pt Likert-scale or Likert-type scale items into dummy variables. This function converts 5-pt scales using the rule that a 4 or 5 on a Likert scale will = 1 on the dummy scale, and a 3, 2, or 1 on Likert scale will = 0 on a dummy scale.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

@@ -29,7 +29,7 @@ likert2dummy <- function(df, x) {
     stop("This function requires a data frame as an input. You have provided an object of class: ", class(df))
   }
   df %>%
-    mutate({{x}} := case_when(
+    dplyr::mutate({{x}} := dplyr::case_when(
       {{x}} <= 3 ~ 0,
       {{x}} >= 4 ~ 1))
 }
