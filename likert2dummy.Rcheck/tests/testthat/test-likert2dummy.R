@@ -9,7 +9,6 @@ test_that("Returns a maximum of 1 and minimum of 0", {
   df <- data.frame(x,y)
   testthat::expect_equal(max(likert2dummy::likert2dummy(df, x)$x), 1)
   testthat::expect_equal(min(likert2dummy::likert2dummy(df, x)$x), 0)
-  rm(x,y,df)
 })
 
 #Test 2: Test that the likert2dummy function will only work for numerical data in my dataset. Inputting a character data column (such as Response Id) will result in failure*
@@ -18,7 +17,6 @@ test_that("doesn't work when character input", {
   b <- c("A","1","4","3","B")
   df <- data.frame(a, b)
   testthat::expect_error(likert2dummy::likert2dummy(df, a))
-  rm(a,b,df)
 })
 
 #Example 3: Test that the output of the likert2dummy function is of the class "data frame"*
@@ -27,5 +25,6 @@ test_that ("returns df", {
   n <-c(3,3,1,5)
   df <- data.frame(m,n)
  testthat::expect_s3_class(likert2dummy::likert2dummy(df, m), "data.frame")
- rm(m,n,df)
 })
+
+rm(list = c(x,y,df,a,b,m,n))
